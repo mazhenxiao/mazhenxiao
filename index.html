@@ -49,10 +49,176 @@
               <header>
                 <h4>常用小工具</h4>
                 <div class="block">
-                    <p class="title">输入类型限制 $(xx).parseInput({})</p>
-                    <div class="box">
-                      
-                    </div>
+                  <p class="title"> <b>parseInput:</b>
+                    <span>输入类型限制  $(xx).parseInput({})</span>
+                  </p>
+                  <div class="box">
+                    <table class="table" cellspacing="0" cellpadding="0">
+                      <caption>
+                        1、 $("input").parseInput({type:'int',dec:2});
+                        <br/>                  
+                        2、 $("input").parseInput({type:'number',dec:2});
+                      </caption>
+                      <thead>
+
+                        <tr>
+                          <th>参数</th>
+                          <th>值</th>
+                          <th>类型</th>
+                          <th>说明</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>
+                          <td>type:</td>
+                          <td>int||number</td>
+                          <td>string</td>
+                          <td>浮点类型或正整数,int类型最大输入12位正整数</td>
+                        </tr>
+                        <tr>
+                          <td>dec:</td>
+                          <td>4</td>
+                          <td>int</td>
+                          <td>可选，与浮点捆绑的小数位数，默认4位,type类型为int时可以限制int类型的最大位数</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                   <p class="title"> 
+                    <b>overflow:</b>
+                    <span>字符串截断为... " ".overflow </span>
+                  </p>
+                  <div class="box">
+                    <table class="table" cellspacing="0" cellpadding="0">
+                      <caption>
+                        var str =  "字符串阶段为"
+                        <br/>                  
+                        str.overflow(3)   >>> 字符串...
+                      </caption>
+                      <thead>
+
+                        <tr>
+                          <th width="150">参数</th>
+                          <th>值</th>
+                          <th>实例</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>
+                          <td>[arguments 1]</td>
+                          <td>int</td>
+                          <td>截断字符串".overflow(3) >>>>   "截断字...</td>
+                        </tr>
+                        <tr>
+                          <td>[arguments 2]</td>
+                          <td>string</td>
+                          <td>"截断字符串".overflow(3,"---") >>>>   "截断字---"   </td>
+                        </tr>
+                        <tr>
+                          <td>[arguments 3]</td>
+                          <td>string</td>
+                          <td>"截断字符串".overflow(3,"---","鼠标滑过显示内容") >>>>   "截断字---（鼠标滑过后显示内容）"</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="title"> 
+                    <b>Format:</b>
+                    <span>日期格式化 (new Date()).Format({})</span>
+                  </p>
+                   <div class="box">
+                     <p> 对Date的扩展，将 Date 转化为指定格式的String 月(M)、日(d)、小时(h)、分(m)、秒(s)、季度(q) 可以用 1-2 个占位符， 年(y)可以用 1-4 个占位符，毫秒(S)只能用 1 个占位符(是 1-3 位的数字) 例子： </p>
+                     <p>(new Date()).Format("yyyy-MM-dd hh:mm:ss.S") ==> 2006-07-02 08:09:04.423    </p>
+                      <p>(new Date()).Format("yyyy-M-d h:m:s.S")      ==> 2006-7-2 8:9:4.18 </p>
+                  
+                   </div>
+                   <p class="title"> 
+                    <b>扩展esayui--datebox只选择月份:</b>
+                    <span>$("xxx").DateBox({}) </span>
+                  </p>
+                  <div class="box">
+                    <table class="table" cellspacing="0" cellpadding="0">
+                      <caption>
+                         $("xxx").DateBox({}) <br/>
+                         参数：同esayui的datebox
+                      </caption>
+                      <thead>
+
+                        <tr>
+                          <th width="150">附加参数</th>
+                          <th>类型            </th>
+                          <th>传值/回调</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>
+                          <td>Select</td>
+                          <td>function        </td>
+                          <td>{ Select:function( self,yer,mon ){  self--> 返回$(this)  ,yer-->年, mon-->月     } }</td>
+                        </tr>
+                       
+                      </tbody>
+                    </table>
+                  </div>
+                  <p class="title"> 
+                    <b>扩展esayui--DateSelect 选择年/季度/月:</b>
+                    <span>$("xxx").DateSelect({}) </span>
+                  </p>
+                   <div class="box">
+                     <table class="table" cellspacing="0" cellpadding="0">
+                      <caption>
+                        $("xxx").DateSelect({ 
+            min:2014,
+            max:2015,
+            leve:3,
+            start:1,
+            onChange:function(data){ data为选取后的数据}
+        }) 
+                      </caption>
+                      <thead>
+
+                        <tr>
+                          <th width="150">附加参数</th>
+                          <th>类型            </th>
+                          <th>传值/回调</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>
+                          <td> min </td>
+                          <td>int                </td>
+                          <td>{ min:2013 }</td>
+                        </tr>
+                       <tr>
+                          <td> max          </td>
+                          <td>int                </td>
+                          <td>{ min:2013,max:2014}</td>
+                        </tr>
+                        <tr>
+                          <td> leve                  </td>
+                          <td>int                </td>
+                          <td>{ leve:3}   层级数，只显示年leve:1，季度leve:2,月leve:3</td>
+                        </tr>
+                        <tr>
+                          <td>start       </td>
+                          <td>int</td>
+                          <td>{ start:1 启始层级   1：年  2：季度}</td>
+                        </tr>
+                         <tr>
+                          <td>onChange           </td>
+                          <td>function</td>
+                          <td>function(date){  date [String]  点击选取的日期后执行   }</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                   </div>
                 </div>
               </header>  
              </article>
