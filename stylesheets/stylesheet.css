@@ -203,9 +203,9 @@ a {
   background-color: #eff0f1;
   border: 0; }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 65em) {
   .main-content {
-    max-width: 64rem;
+    max-width: 65rem;
     padding: 2rem 6rem;
     margin: 0 auto;
     font-size: 1.1rem; } }
@@ -243,3 +243,67 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+/*公用css*/
+
+
+.hidden{display:none;}
+.ipt{ width:100%}
+.ipt60{ width:60px}
+.ipt90{ width:90px}
+.ipt100{ width:100px}
+.ipt120,.select120{ width:120px}
+.select100{ width:100px}
+.w150{ width:150px}
+.w200{ width:200px;}
+.w220{ width:220px;}
+.rad{color:#3c6861 !important}
+.gay { color:#a0a0a0 !important}
+.gay_ccc{color:#ccc !important}
+.yellow{color:#ff6000 !important}
+.green{color:#2b7d72 !important}
+.Left{ text-align: left;}
+.Right{ text-align: right;}
+.Center{ text-align: center;}
+input {outline:none}
+input[type=button],a[type=button],input[type=submit]{ display:inline-block; +zoom:1; +display:inline; padding:0px; height:26px; background:#3c6861; border:#3c6861 solid 1px; color:#fff; text-align: center; font-size:14px; border-radius:3px; margin:0 3px; font-family:"Microsoft YaHei"; cursor:pointer;text-indent: 0;}
+input[disabled],a[disabled]{ background:#fafafa;border-color: #e0e0e0; color:#a0a0a0}
+input[type=checked]{ border:none }
+a[type=button]{ line-height:26px;}
+.btn120{ width:120px}
+.btn90{ width:90px}
+.btn60{width:60px}
+.pad10{ padding:10px;}
+.padL10{ padding-left:10px}
+.pad0050{ padding:0 50px !important}
+.mgT10 { margin-top:10px;}
+.mgT20{ margin-top:20px;}
+.mgB10 { margin-bottom:10px;}
+.mgB20 { margin-bottom:20px;}
+.mg10{ margin:10px }
+.mgR10{ margin-right:10px}
+.mgR20{ margin-right:20px;}
+.f14{font-size: 14px}
+.iss-lineBox{ border:#d4d4d4 solid 1px; padding:10px; background: #fff;}
+.bg-fff{ background:#fff;}
+textarea { font-size:12px}
+input,select,textarea{ border:none;border:#d4d4d4 solid 1px; height:18px; line-height:18px ;padding:3px 2px}
+select{padding:0; height:24px; border:none;border:#d4d4d4 solid 1px;}
+input[type=radio],input[type=checkbox]{ margin-left:10px}
+input[type=radio]:first-child ,input[type=checkbox]:first-child { margin-left:0}
+
+label.error { background:#fff; border:#ccc solid 1px; padding:2px}
+.errorParent .combo-error{border-color:#ffa8a8;}
+.errorParent .combo-error input{background:#fff3f3; }
+
+.center{clear:both;height:0px;line-height:0px;font-size:0px;}
+.left{float:left;}
+.right{float:right;}
+.red{color:#3c6861;}
+.yellow{ color:#ff6000}
+.fff{color:#fff;}
+.fffa{color:#fff;}
+.h30{height:30px;}
+.h50{height:50px;}
+.h70{height:70px;}
+.clr:after{ zoom:1;}
+.clr:after{ clear: both;display: block;visibility: hidden;overflow: hidden;content:"";height: 0;}

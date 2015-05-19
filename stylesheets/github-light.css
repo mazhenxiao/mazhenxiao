@@ -113,4 +113,9 @@
 .pl-mo /* meta.output */ {
   color: #1d3e81;
 }
+.blur{color:#2EB294;}
+.red{color:#F57378}
+.gay{color:#B5B5B5;}
 
+/* 首页css */
+.box { font-size:16px;background:#FAFAFA;border:#D5D6D7 solid 1px; padding:10px;}
